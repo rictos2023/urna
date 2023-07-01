@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eleição da Unidade</title>
+  <style>
+    .candidate-img {
+      width: 200px;
+      height: 200px;
+      cursor: pointer;
+    }
+
+    .winner {
+      border: 2px solid green;
+    }
+
+    #thank-you-message {
+      display: none;
+      text-align: center;
+      font-size: 24px;
+      color: green;
+    }
+
+    #results-button {
+      margin-top: 20px;
+    }
+
+    #results-container {
+      display: none;
+      margin-top: 20px;
+    }
+
+    #chart-container {
+      width: 400px;
+      height: 300px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sistema de Votação</h1>
+
+  <div id="candidates-container">
+    <img class="candidate-img" src="cobaia1.jpeg" alt="Richarlyson Santos">
+    <img class="candidate-img" src="cobaia2.jpeg" alt="Yann Lázaro">
+    <img class="candidate-img" src="cobaia3.jpeg" alt="Diogo Pereira">
+  </div>
+
+  <div id="thank-you-message">Obrigado pelo seu voto!</div>
+
+  <button id="results-button">Ver Resultados</button>
+
+  <div id="results-container">
+    <h2>Resultados</h2>
+    <div id="vote-counts"></div>
+    <div id="chart-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
